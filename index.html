@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="guess">
+            <p class="guess__text">🎰 Guess It...</p>
+            <h3 class="guess__title">game center</h3>
+            <p class="guess__text">(score of 20)</p>
+        </header>
+        <main class="guess__body">
+            <section class="guess__field">
+                <span class="guess__line"></span>
+                <p class="guess__correct">?</p>
+                <span class="guess__line"></span>
+            </section>
+
+            <section class="guess__box">
+                <div class="guess__left">
+                    <form class="guess__form">
+                        <p class="guess__choose">Select your number</p>
+                        <input type="number" class="guess__number" />
+                    </form>
+                    <button class="btn btn-check">Check</button>
+                </div>
+                <div class="guess__right">
+                    <p class="guess__start">🔃Start guessing....</p>
+                    <p class="guess__score-text">
+                        🥇 Score: <span class="guess__score-text guess__score">20</span>
+                    </p>
+                    <p class="guess__highscore-text">
+                        🏆 Highscore:
+                        <span class="guess__highscore-text guess__highscore">0</span>
+                    </p>
+                </div>
+            </section>
+            <div class="button__group">
+                <button class="btn btn-new">🆕 New Game</button>
+                <button class="btn btn-replay">▶ Replay</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
